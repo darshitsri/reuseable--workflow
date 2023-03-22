@@ -1,0 +1,8 @@
+name: Reusable workflow main file
+
+on:
+ workflow_dispatch:
+ 
+jobs:
+ Call-workflow-file-from-same-repo:
+  uses: .github/workflows/workflowfile1.yml
