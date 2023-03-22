@@ -6,3 +6,5 @@ on:
 jobs:
  Call-workflow-file-from-same-repo:
   uses: ./.github/workflows/workflowfile1.yml
+ Call-from-different-branch:
+  uses: darshitsri/reuseable--workflow/.github/workflows/workflowfile2.yml@reusbale-workflow2
