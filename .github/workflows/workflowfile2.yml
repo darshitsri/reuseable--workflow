@@ -1,0 +1,14 @@
+name: reusbale workflow file2 from feature branch
+
+on:
+  workflow_call:
+jobs:
+
+  run1-job1:
+  
+   runs-on: ubuntu-latest
+   steps:
+    - uses: actions/checkout@v3
+    - name: output form workflow file2
+      run: |
+        echo "Executing of workflowfile2 from same repo but different branch"
