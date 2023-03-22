@@ -5,4 +5,4 @@ on:
  
 jobs:
  Call-workflow-file-from-same-repo:
-  uses: .github/workflows/workflowfile1.yml
+  uses: ./.github/workflows/workflowfile1.yml
