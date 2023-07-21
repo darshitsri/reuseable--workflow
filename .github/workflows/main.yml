@@ -2,6 +2,11 @@ name: Reusable workflow main file
 
 on:
  workflow_dispatch:
+   inputs:
+    PROJECT_CODE:
+        description: 'Project code'
+        required: true
+        default: ''
  
 jobs:
  Call-workflow-file-from-same-repo:
