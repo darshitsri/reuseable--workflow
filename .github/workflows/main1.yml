@@ -14,5 +14,5 @@ jobs:
              code: 343
      uses: ./.github/workflows/workflowfile1.yml
      with:
-       PROJECT_CODEE: ${{ matrix.code }}
+       PROJECT_CODE: ${{ matrix.code }}
        PROJECT_NAME: ${{ matrix.name }}
