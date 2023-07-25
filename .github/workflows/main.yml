@@ -3,12 +3,12 @@ name: Reusable workflow main file
 on:
  workflow_dispatch:
     inputs:
-#     CODE:
-#         description: 'Project code'
-#         required: true
-#         default: ''
-     NAME:
+    CODE:
         description: 'Project code'
+        required: true
+        default: ''
+     NAME:
+        description: 'Project name'
         required: true
         default: ''
  
@@ -16,7 +16,7 @@ jobs:
  Call-workflow-file-from-same-repo:
   uses: ./.github/workflows/workflowfile1.yml
   with:
-#      PROJECT_CODE: ${{ github.event.inputs.CODE }}
+      PROJECT_CODE: ${{ github.event.inputs.CODE }}
       PROJECT_NAME: ${{ github.event.inputs.NAME }}
 #  Call-from-different-branch:
 #   uses: darshitsri/reuseable--workflow/.github/workflows/workflowfile2.yml@reusbale-workflow2
