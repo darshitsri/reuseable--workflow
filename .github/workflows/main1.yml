@@ -8,10 +8,10 @@ jobs:
        matrix:
          code: [335, 343]
          include:
-           - name: Titan335
-             code: 335
-           - name: TItan343
-             code: 343
+           - code: 335
+             name: Titan335
+           - code: 343
+             name: TItan343
      uses: ./.github/workflows/workflowfile1.yml
      with:
        PROJECT_CODE: ${{ matrix.code }}
