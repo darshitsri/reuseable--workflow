@@ -7,9 +7,16 @@ on:
         description: 'Project code'
         required: true
         default: ''
+    PROJECT_NAME:
+        description: 'Project code'
+        required: true
+        default: ''
  
 jobs:
  Call-workflow-file-from-same-repo:
   uses: ./.github/workflows/workflowfile1.yml
- Call-from-different-branch:
-  uses: darshitsri/reuseable--workflow/.github/workflows/workflowfile2.yml@reusbale-workflow2
+  with:
+     PROJECT_CODE: ${{ github.event.inputs.PROJECT_CODE }}
+     PROJECT_NAME: ${{ github.event.inputs.PROJECT_NAME }}
+#  Call-from-different-branch:
+#   uses: darshitsri/reuseable--workflow/.github/workflows/workflowfile2.yml@reusbale-workflow2
