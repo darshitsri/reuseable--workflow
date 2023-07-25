@@ -3,12 +3,11 @@ name: reusbale workflow file1
 on:
   workflow_call:
 jobs:
-
   run1-job1:
-  
    runs-on: ubuntu-latest
    steps:
-    - uses: actions/checkout@v3
     - name: output form workflow file1
       run: |
-        echo "Executing of workflowfile1 from same repo"
+          echo "Product CODE:" ${{ inputs.PROJECT_CODE }}
+          echo "Product NAME:" ${{ inputs.PROJECT_NAME }}
+
