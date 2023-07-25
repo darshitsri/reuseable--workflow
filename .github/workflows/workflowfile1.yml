@@ -2,12 +2,18 @@ name: reusbale workflow file1
 
 on:
   workflow_call:
+    inputs:
+     PROJECT_NAME:
+        description: 'project name'
+        default: ''
+        required: true
+        type: string
 jobs:
   run1-job1:
    runs-on: ubuntu-latest
    steps:
     - name: output form workflow file1
       run: |
-          echo "Product CODE:" ${{ inputs.PROJECT_CODE }}
-          echo "Product NAME:" ${{ inputs.PROJECT_NAME }}
+         echo "Product NAME:" ${{ inputs.PROJECT_NAME }}
+ #         echo "Product CODE:" ${{ inputs.PROJECT_CODE }}
 
