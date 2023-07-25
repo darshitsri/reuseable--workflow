@@ -1,4 +1,4 @@
-name: Reusable workflow main file
+name: Reusable workflow main_1 file
 
 on:
  workflow_dispatch:
