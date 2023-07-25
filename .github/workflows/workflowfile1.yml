@@ -8,6 +8,11 @@ on:
         default: ''
         required: true
         type: string
+     PROJECT_CODE:
+        description: 'project name'
+        default: ''
+        required: true
+        type: string
 jobs:
   run1-job1:
    runs-on: ubuntu-latest
@@ -15,5 +20,5 @@ jobs:
     - name: output form workflow file1
       run: |
          echo "Product NAME:" ${{ inputs.PROJECT_NAME }}
- #         echo "Product CODE:" ${{ inputs.PROJECT_CODE }}
+          echo "Product CODE:" ${{ inputs.PROJECT_CODE }}
 
