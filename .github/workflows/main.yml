@@ -2,8 +2,8 @@ name: Reusable workflow main file
 
 on:
  workflow_dispatch:
-    inputs:
-    CODE:
+   inputs:
+     CODE:
         description: 'Project code'
         required: true
         default: ''
